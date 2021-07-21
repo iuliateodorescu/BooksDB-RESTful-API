@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BooksAPI</name>
+    </assembly>
+    <members>
+        <member name="M:BooksAPI.Controllers.BooksController.GetBook(System.Int32)">
+            <summary>
+            Returns all the information of a book
+            </summary>
+            <param name="bookId">The book Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksAPI.Controllers.BooksController.GetBooks(System.Int32,System.Int32)">
+            <summary>
+            Returns a page of books
+            </summary>
+            <param name="pageStart">The page start position (>0)</param>
+            <param name="pageSize">The page size (>0)</param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksAPI.Controllers.BooksController.GetBooksByTitle(System.String,System.Int32,System.Int32)">
+            <summary>
+            Returns the books that contain the string text in their title
+            </summary>
+            <param name="text">The text which the title should contain</param>
+            <param name="pageStart">The page start position (>0)</param>
+            <param name="pageSize">The page size (>0)</param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksAPI.Controllers.BooksController.GetRecommendations(System.String)">
+            <summary>
+            Gets the recommendations
+            </summary>
+            <param name="title">The title of the reference book</param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksAPI.Controllers.UsersController.RegisterUser(BooksAPI.Domain.Dto.UserDto)">
+            <summary>
+            Registers an user
+            </summary>
+            <param name="userDto">The user dto object</param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksAPI.Controllers.UsersController.AuthenticateUser(System.String,System.String)">
+            <summary>
+            Authenticates an user
+            </summary>
+            <param name="username">The username</param>
+            <param name="password">The password</param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksAPI.Controllers.UsersController.UpdateUserLibrary(System.Int32,BooksAPI.Domain.Dto.LibraryItemDto)">
+            <summary>
+            Updates the library of the user
+            </summary>
+            <param name="userId">The Id of the user</param>
+            <param name="libraryItemDto">The library item dto object</param>
+            <returns></returns>
+        </member>
+        <member name="M:BooksAPI.Controllers.UsersController.GetUserLibrary(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns the items from the user's library
+            </summary>
+            <param name="userId">The Id of the user</param>
+            <param name="pageStart">The page start position (>0)</param>
+            <param name="pageSize">The page size (>0)</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
